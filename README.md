@@ -1,7 +1,7 @@
 
 # User Management System - Spring Boot Application
 
-A complete User Management System built using Spring Boot, Thymeleaf, and MySQL. This application supports user registration, login, logout, email verification, password encryption, and role-based access control.
+A complete User Management System built using Spring Boot, Thymeleaf, and PostreSQL. This application supports user registration, login, logout, email verification, password encryption, and role-based access control.
 
 ---
 
@@ -10,10 +10,10 @@ A complete User Management System built using Spring Boot, Thymeleaf, and MySQL.
 - User registration with email verification (using Brevo)
 - Login/logout functionality
 - Password encryption with BCrypt
-- Role-based access (USER / ADMIN)
+- Role-based access (USER / TEACHER/ ADMIN)
 - Spring Security Integration
-- Forgot Password and Password Reset with Email OTP
-- Database Integration (MySQL)
+- Forgot Password and Password Reset with Email Mobile Verification
+- Database Integration (postgreSQL)
 - Email verification using API key securely stored
 
 ---
@@ -55,7 +55,7 @@ cd user-management-system
 ```
 
 1. Open the project in IntelliJ IDEA.
-2. Create a `user_db` schema in MySQL.
+2. Create a `user_db` schema in postgreSQL.
 3. Create a `application.properties` file in `src/main/resources/`:
 
 ```properties
